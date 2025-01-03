@@ -74,6 +74,7 @@ app.use("/assets", express.static(path.join(__dirname, "assets")));
 
 // Import the routes
 app.use("/static", express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public")));
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/index.html'));
 });
