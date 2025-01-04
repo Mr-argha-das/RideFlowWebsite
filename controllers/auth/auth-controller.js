@@ -297,6 +297,9 @@ const registerUser = async (req, res) => {
       text-align: center;
       font-style: italic;
     }
+      .output {
+        text-transform: capitalize;
+      }
   </style>
 </head>
 <body>
@@ -305,7 +308,7 @@ const registerUser = async (req, res) => {
       <img src="http://res.cloudinary.com/dulkmeadg/image/upload/v1735155737/pph48xmmwykrbhle7uzo.png" alt="RideFlow Logo" />
     </div>
     <div class="body">
-      <p class="nameCon"><strong>Hi</strong><strong class="name"> ${userName}</strong>,</p>
+      <p class="nameCon"><strong>Hi</strong><strong class="name output"> ${userName}</strong>,</p>
       <p>Thank you for signing up for RideFlow, your trusted bike rental service!</p>
       <p>To complete your registration and start riding, please verify your email address by pressing the button below:</p>
       <div class="button-container">
@@ -660,6 +663,9 @@ const requestPasswordReset = async (req, res) => {
       text-align: center;
       font-style: italic;
     }
+    .output {
+        text-transform: capitalize;
+    }
   </style>
             </head>
           
@@ -669,7 +675,7 @@ const requestPasswordReset = async (req, res) => {
       <img src="http://res.cloudinary.com/dulkmeadg/image/upload/v1735155737/pph48xmmwykrbhle7uzo.png" alt="RideFlow Logo" />
     </div>
     <div class="body">
-      <p class="nameCon"><strong>Hi</strong><strong class="name"> ${user.userName.replace(
+      <p class="nameCon"><strong>Hi</strong><strong class="name output"> ${user.userName.replace(
         /(_\d+)$/,
         ""
       )}</strong>,</p>
