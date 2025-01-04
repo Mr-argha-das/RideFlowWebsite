@@ -67,8 +67,11 @@ app.use("/api/user/Rides", userRidesRouter);
 app.use("/api/user/address", userAddressRouter);
 app.use("/api/contact", UserContactRouter);
 app.use("/api/booking", userBookingRouter);
+
 // app.use("/api/upload-image", adminRidesRouter);
+
 app.post("/api/upload", upload.single("file"), imageUpload);
+
 app.use("/assets", express.static(path.join(__dirname, "assets")));
 
 // Import the routes
