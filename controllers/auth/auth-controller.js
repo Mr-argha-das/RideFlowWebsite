@@ -157,7 +157,7 @@ const registerUser = async (req, res) => {
 <body>
   <div class="container">
     <div class="header">
-      <img src="http://res.cloudinary.com/dulkmeadg/image/upload/v1735155737/pph48xmmwykrbhle7uzo.png" alt="RideFlow Logo" />
+      <img src="http://res.cloudinary.com/dhppoiecn/image/upload/v1736082268/zg03s9muyi5hyrxjt3yg.png" alt="RideFlow Logo" />
     </div>
     <div class="body">
       <p class="nameCon"><strong>Hi</strong><strong class="name output"> ${userName}</strong>,</p>
@@ -418,7 +418,8 @@ const requestPasswordReset = async (req, res) => {
     });
 
     const logo =
-      "https://drive.google.com/file/d/18RCIU6TMcB5YqcKJ5bBnsC_9kallIkxR/view?usp=drive_link";
+      "http://res.cloudinary.com/dhppoiecn/image/upload/v1736082268/zg03s9muyi5hyrxjt3yg.png";
+
     await transporter.sendMail({
       from: `"Ride Flow Rentals" <${process.env.EMAIL_USER}>`,
       to: email,
@@ -516,7 +517,7 @@ const requestPasswordReset = async (req, res) => {
 <body>
   <div class="container">
     <div class="header">
-      <img src="http://res.cloudinary.com/dulkmeadg/image/upload/v1735155737/pph48xmmwykrbhle7uzo.png" alt="RideFlow Logo" />
+      <img src="http://res.cloudinary.com/dhppoiecn/image/upload/v1736082268/zg03s9muyi5hyrxjt3yg.png" alt="RideFlow Logo" />
     </div>
     <div class="body">
       <p class="nameCon"><strong>Hi</strong><strong class="name output"> ${user.userName.replace(

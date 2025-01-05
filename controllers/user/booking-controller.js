@@ -284,7 +284,7 @@ const bookRide = async (req, res) => {
     <div class="container">
       <div class="header">
         <img
-          src="http://res.cloudinary.com/dulkmeadg/image/upload/v1735155737/pph48xmmwykrbhle7uzo.png"
+          src="http://res.cloudinary.com/dhppoiecn/image/upload/v1736082268/zg03s9muyi5hyrxjt3yg.png"
           alt="RideFlow Logo"
         />
       </div>
@@ -295,7 +295,7 @@ const bookRide = async (req, res) => {
         )}</span>,</p>
         <p>
           Your booking for the bike
-          <b class="highlight output">${bike.rideName}'s</b> has been placed
+          <b class="highlight output">${bike.rideName}</b> has been placed
           successfully. Below are your booking details:
         </p>
         <div class="bike-image">
